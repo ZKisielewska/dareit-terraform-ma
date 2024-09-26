@@ -1,3 +1,7 @@
+resource "google_storage_bucket" "gcs_bucket" {
+  name = "dareit-tf-ma-ci"
+}
+
 resource "google_compute_instance" "dareit-vm-ci" {
   name         = "dareit-vm-tf-ma-ci"
   machine_type = "e2-medium"
